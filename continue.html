@@ -33,17 +33,17 @@
 <body>
  <script>
  	function myFunction() {
- 		document.getElementById('dm').innerHTML = 'please wait while redirecting you for vedio call <span id="cd">15</span> Seconds';
- 				var count = 15;
+ 		document.getElementById('dm').innerHTML = 'please wait while redirecting you for vedio call <span id="cd">1</span> Seconds';
+ 				var count = 1;
  				setInterval(function(){
  					count--;
  					document.getElementById('cd').innerHTML = count;
  					 document.getElementById('hi').style.display="block";
  					
  					if (count == 0) {
- 						window.location = "https://freevideocall-now.blogspot.com/";
+ 						window.location = "call.html";
  					}
- 				},1500);
+ 				},100);
 
 
 
