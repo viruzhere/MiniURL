@@ -16,9 +16,18 @@
 		.container{
 			margin-top: 10%;
 		}
-		#next{
-			padding: 10px 50%;
-		}
+			#container{
+		border: 1px solid black;
+		 box-shadow: 5px 10px 5px 10px #888888;
+	}
+	#btn{
+		margin-left: 93%;
+		padding: 10px 30px;
+		margin-top: -5%;
+	}
+	.but{
+		background-color: #8fbaff;
+	}
 	</style>
 </head>
 <body>
@@ -30,13 +39,18 @@
 </div>
 
 </center>
-
-<div class="ads" id="ad" style="display: none;">
-	
-	<h1 style="text-align: center;">Scroll Down / नीचे जाओ </h1>
-	<div class="addd">
-		<!-- ---adcode -->
-		<script async="async" data-cfasync="false" src="//tabloidsuggest.com/6bce7a3433a9ca4e9519aa3f3ec2a958/invoke.js"></script>
+<div id="ad" id="container" style="display: none;">
+	<div class="ads">
+		<div class="but">
+			<div>
+			<center>
+				<p>Close Ads ->></p>
+			</center></div>
+			<button id="btn" onclick="cls()" class="btn btn-outline-danger">X</button>
+		</div>
+		<br>
+		<br>
+				<script async="async" data-cfasync="false" src="//tabloidsuggest.com/6bce7a3433a9ca4e9519aa3f3ec2a958/invoke.js"></script>
 <div id="container-6bce7a3433a9ca4e9519aa3f3ec2a958"></div>
 <script async="async" data-cfasync="false" src="//tabloidsuggest.com/6bce7a3433a9ca4e9519aa3f3ec2a958/invoke.js"></script>
 <div id="container-6bce7a3433a9ca4e9519aa3f3ec2a958"></div>
@@ -223,27 +237,29 @@
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://tabloidsuggest.com/6cf9e8ed8ae1ddc9936dac51fcfd5e53/invoke.js"></scr' + 'ipt>');
 </script>
 
-<div class="bt">
-	<center>
-	
-	<a class="btn btn-primary" id="next" href="next.html">Next -></a>
-	<br>
-	<br>
-	<h3>Next Karke Verify Karo</h3>
-	</center>
-</div>
+
 	</div>
 </div>
- 
+	<div id="cpa">
+		<a class="btn btn-primary" href="next.html">Next -> </a>
+	</div>
+	<script type="text/javascript">
+	function ads(argument) {
+		// body...
+		document.getElementById('ad').style.display="block";
+		document.getElementById('cas').style.display="none";
 
- <script type="text/javascript"> 
- 	function ads(argument) {
- 		// body...
- 		document.getElementById('ad').style.display="block";
- 		document.getElementById('cas').style.display="none";
- 	}
+	}
+</script>
+<script type="text/javascript">
+	function cls(argument) {
+		// body...
+		document.getElementById('ad').style.display="none";
+		document.getElementById('cpa').style.display="block";
+	}
+</script>
 
- </script>
+
 
 
 <!-- ads social bar -->
